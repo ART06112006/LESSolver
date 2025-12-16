@@ -7,7 +7,7 @@
 * **Gaussian Elimination:** Implements the classic row reduction method to find solutions.
 * **Comprehensive Analysis:** Accurately identifies:
     * A unique solution.
-    * Infinitely many solutions.
+    * Infinitely many solutions (parameters are represented as "t"`s with appropriated indices).
     * No solution (inconsistent systems).
 * **High Precision:** Operates with `double` precision types.
 * **Step-by-Step Visualization:** Displays the transformation of the matrix at each stage of the calculation.
