@@ -61,7 +61,7 @@ public class Lessolver {
                 if (Ab[i][i] == 0) continue;
 
                 for (int j = i - 1; j >= 0; j--){
-                    double k = - Ab[j][i] / Ab[i][i];
+                    //double k = - Ab[j][i] / Ab[i][i];
 
                     double k1 = Ab[i][i];
                     double k2 = Ab[j][i];
@@ -166,7 +166,7 @@ public class Lessolver {
             //count the number of columns
             int cols = 0;
             for (int s = 0; s < inputText.length(); s++) {
-                if (Character.isDigit(inputText.charAt(s))) cols++;
+                if (Character.isDigit(inputText.charAt(s)) && (inputText.charAt(s + 1) == ']' || inputText.charAt(s + 1) == ',')) cols++;
                 if (inputText.charAt(s) == ']') break;
             }
 
